@@ -28,7 +28,8 @@ const Home = () => {
               animate = 'show'
               exit = 'hidden'
               className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 '>
-              Unlocking the Future: Crafting Seamless Digital Experiences – A Fullstack Developer's Journey into the Digital Realm
+              Unlocking the Future: Crafting Seamless Digital Experiences &ndash; A Fullstack Developer&apos;s Journey into the Digital Realm &nbsp;
+
             </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
