@@ -16,10 +16,10 @@ const Contact = () => {
             animate='show'
             exit='hidden'
           >
-            Let's <span>Connect.</span>
+            Let&lsquo;s <span>Connect.</span>
           </motion.h2>
           {/* form */}
-          <motion.form 
+          <motion.form
             className='flex-1 flex flex-col gap-6 w-full mx-auto'
             variants={fadeIn('up', 0.4)}
             initial='hidden'
