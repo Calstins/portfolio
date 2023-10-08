@@ -138,7 +138,7 @@ const About = () => {
           exit='hidden'
           animate='show'
           initial='hidden' 
-          className='max-w-[500px] mx-auto xl:mx-0 xl:mb-12 px-2 xl:px-0'>Hi there!<br />5 years ago, I began freelancing as a developer, Since then, I've done remote work for agencies, consulting for startups, and collaborated on digital products for business and consumer use</motion.p>
+          className='max-w-[500px] mx-auto xl:mx-0 xl:mb-12 px-2 xl:px-0'>Hi there!<br />5 years ago, I began freelancing as a developer, Since then, I&apos;ve done remote work for agencies, consulting for startups, and collaborated on digital products for business and consumer use</motion.p>
         {/* counters */}
         <motion.div
           variants={fadeIn('right', 0.6)}
@@ -188,15 +188,15 @@ const About = () => {
         <div 
           className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'
         >
-          {aboutData.map((item, indexItem)=>{
+          {aboutData.map((item, items)=>{
             return (
               <div 
-                key={indexItem} 
-                className={`${
-                  index === indexItem && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
+                key = {items} 
+                className = {`${
+                  index === items && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
                 } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                 onClick={()=>
-                  setIndex(indexItem)
+                  setIndex(items)
                 }
               >
                 {item.title}
@@ -205,15 +205,15 @@ const About = () => {
           })}
         </div>
         <div className= 'py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
-          {aboutData[index].info.map((item, indexItem)=>{
+          {aboutData[index].info.map((item, items)=>{
             return(
-              <div key = {indexItem} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
+              <div key = {items} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
                 <div className='font-light mb-2 md:mb-0'>{item.title}</div>
                 <div className="hidden md:flex ">-</div>
                 <div>{item.stage}</div>
                 <div className='flex gap-x-4'>
                   {
-                    item.icons?.map((icon, indexItem)=>{
+                    item.icons?.map((icon, items)=>{
                       return(<div className='text-l text-white'>{icon}</div>)
                     })
                   }
