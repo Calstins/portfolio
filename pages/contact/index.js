@@ -16,10 +16,10 @@ const Contact = () => {
             animate='show'
             exit='hidden'
           >
-            Let&lsquo;s <span>Connect.</span>
+            Let&apos;s <span>Connect.</span>
           </motion.h2>
           {/* form */}
-          <motion.form
+          <motion.form 
             className='flex-1 flex flex-col gap-6 w-full mx-auto'
             variants={fadeIn('up', 0.4)}
             initial='hidden'
@@ -34,7 +34,7 @@ const Contact = () => {
             <textarea name="message" placeholder='message' className='textarea'></textarea>
             <button className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden group hover:border-accent'>
               <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>
-                Let's talk
+                Let&apos;s talk
               </span>
               <BsArrowRight className='-translate-y-[120%]  opacity-0 group-hover:flex group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]'/>
             </button>
