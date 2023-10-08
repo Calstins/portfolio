@@ -108,8 +108,6 @@ import {fadeIn} from '../../variants'
 
 const About = () => {
   const [selectedTabIndex, setSelectedTabIndex] = useState(0)
-  console.log(indexes);
-
   return <div className=' bg-primary/30 py-32 text-center xl:text-left'>
     {/* circles */}
     <Circles/>
