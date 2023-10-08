@@ -5,8 +5,8 @@ import TestimonialSlider from "../../components/TestimonialSlider";
 
 const Testimonials = () => {
   return (
-    <div className="h-full bg-primary/30 py-32 text-center">
-      <div className="container mx-auto h-full flex flex-col justify-center">
+    <div className="bg-primary/30 py-32 text-center ">
+      <div className="container mx-auto h-full flex flex-col justify-center md:w-[1024px]">
         {/* title */}
         <motion.h2
           variants={fadeIn('up', 0.2)}

@@ -9,9 +9,9 @@ export const servicesData = [
 ]
 const Services = () => {
   return (
-    <div className='h-full bg-primary/30 py-36 items-center'>
+    <div className='bg-primary/30 py-36 items-center'>
       <Circles/>
-      <div className="container mx-auto">
+      <div className="container mx-auto md:w-[1024px]">
         <div className='flex flex-col xl:flex-row gap-x-8'>
           {/* text */}
           <div className='text-center flex xl:w-[30vw] flex-col lg:text-left'>
@@ -25,13 +25,13 @@ const Services = () => {
               My services <span className='text-accent'>.</span>
             </motion.h2>
             <motion.p
-             className='mb-4 max-w-[400px] mx-auto lg-mx-0'
+             className='mb-4 max-w-[400px] mx-auto lg-mx-0 text-[13px]'
              variants={fadeIn('up', 0.4)}
              initial="hidden"
              animate='show'
              exit='hidden'
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium assumenda voluptatum magni ad minus soluta autem voluptatem commodi eligendi totam?
+              Our integrated suite of services covers software development, design, digital marketing, and consultation. We empower businesses to thrive in the digital age, from innovative software solutions to compelling design and effective marketing strategies, all backed by expert consultation for strategic success
             </motion.p>
           </div>
           {/* slider */}

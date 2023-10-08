@@ -2,25 +2,28 @@ import Image from 'next/image';
 // testimonial data
 const testimonialData = [
   {
-    image: '/t-avt-1.png',
-    name: 'Anne Smith',
-    position: 'Customer',
+    image: '/austin1.png',
+    name: 'Austin Coker',
+    position: 'Client',
+    country: 'UK',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      "Caleb's service is exceptional! He turned our vision into a sleek website. His expertise in web development is top-notch.",
   },
   {
     image: '/t-avt-2.png',
-    name: 'Jane Doe',
-    position: 'Customer',
+    name: 'Yinka',
+    position: 'Client',
+    country: 'Australia',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Fast, reliable, and innovative. Our software needs were met beyond expectations. Highly recommend their services.',
   },
   {
-    image: '/t-avt-3.png',
-    name: 'Jhon Doe',
-    position: 'Customer',
+    image: '/mercy.png',
+    name: "Ma'am Mercy",
+    position: 'CEO Fortune Chain',
+    country: 'Nigeria',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Outstanding work by Caleb! He transformed our ideas into a user-friendly platform. His skills in web development are truly impressive.',
   },
 ];
 
@@ -53,9 +56,9 @@ const TestimonialSlider = () => {
                       <Image src={testimonial.image} width={100} height={100} alt=''/>
                     </div>
                     <div className='text-lg'>{testimonial.name}</div>
-                    <div className='text-[12px] uppercase font-extralight tracking-widest'>{testimonial.position}</div>
+                    <div className='text-[9px] uppercase font-extralight tracking-widest'>{testimonial.position}</div>
+                    <div className='text-[12px] uppercase font-extralight tracking-widest'>{testimonial.country}</div>
                   </div>
-
                 </div>
                   {/* quote message */}
                 <div className='flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20'>

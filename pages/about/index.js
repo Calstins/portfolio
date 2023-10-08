@@ -110,7 +110,7 @@ const About = () => {
   const [index, setIndex] = useState(0)
   console.log(index);
 
-  return <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+  return <div className=' bg-primary/30 py-32 text-center xl:text-left'>
     {/* circles */}
     <Circles/>
     {/* avatar */}
@@ -123,22 +123,22 @@ const About = () => {
     > 
       <Avatar/>
     </motion.div>
-    <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 z-50'>
+    <div className='container mx-auto flex flex-col items-center xl:flex-row gap-x-6 md:w-[1024px]'>
       {/* text */}
-      <div className='flex-1 flex flex-col justify-center'>
+      <div className='flex-1 flex flex-col justify-center mb-10'>
         <motion.h2 
           variants={fadeIn('right', 0.2)}
           exit='hidden'
           animate='show'
           initial='hidden'
-          className='h2'>Captivating <span className='text-accent'>stories</span> birth magnificent designs.
+          className='h3'>Captivating <span className='text-accent'>stories</span> birth magnificent designs.
         </motion.h2>
         <motion.p
           variants={fadeIn('right', 0.4)}
           exit='hidden'
           animate='show'
           initial='hidden' 
-          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Hi there!<br />5 years ago, I began freelancing as a developer, Since then, I've done remote work for agencies, consulting for startups, and collaborated on digital products for business and consumer use</motion.p>
+          className='max-w-[500px] mx-auto xl:mx-0 xl:mb-12 px-2 xl:px-0'>Hi there!<br />5 years ago, I began freelancing as a developer, Since then, I've done remote work for agencies, consulting for startups, and collaborated on digital products for business and consumer use</motion.p>
         {/* counters */}
         <motion.div
           variants={fadeIn('right', 0.6)}

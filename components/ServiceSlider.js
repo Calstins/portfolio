@@ -20,22 +20,22 @@ const serviceData = [
   {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Creating innovative apps and solutions for your business needs.',
   },
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Crafting captivating visuals that resonate with your brand.',
   },
   {
     icon: <RxSpeakerLoud />,
     title: 'Digital Marketing',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Driving online success through strategic campaigns.',
   },
   {
     icon: <LuContact />,
     title: 'Consultation',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Expert guidance to optimize your business strategy.',
   },
 ];
 
@@ -72,7 +72,7 @@ const ServiceSlider = () => {
                 {/* description */}
                 <div className='mb-8'>
                   <div className='mb-2 text-lb'>{service.title}</div>
-                  <p className='max-w-[350px] leading-normal'>{service.description}</p>
+                  <p className='max-w-[350px] leading-normal text-[13px]'>{service.description}</p>
                 </div>
                 <div className='text-3xl'> 
                   <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300'/>

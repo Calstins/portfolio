@@ -9,9 +9,9 @@ export const servicesData = [
 ]
 const Work = () => {
   return (
-    <div className='h-full bg-primary/30 py-36 items-center'>
+    <div className=' bg-primary/30 py-36 items-center'>
       <Circles/>
-      <div className="container mx-auto">
+      <div className="container mx-auto md:w-[1024px]">
         <div className='flex flex-col xl:flex-row gap-x-8'>
           {/* text */}
           <div className='text-center flex xl:w-[30vw] flex-col lg:text-left'>
