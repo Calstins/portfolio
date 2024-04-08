@@ -7,7 +7,7 @@ const Socials = () => {
     >
       <RiGithubLine/>
     </Link>
-    <Link href={'https://www.instagram.com/calstins/'} className="hover:text-accent transition-all duration-300" target="_blank"
+    <Link href={'https://www.linkedin.com/in/caleb-opule/'} className="hover:text-accent transition-all duration-300" target="_blank"
     >
       <RiLinkedinLine/>
     </Link>
