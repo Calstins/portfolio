@@ -31,7 +31,10 @@ const Work = () => {
              animate='show'
              exit='hidden'
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium assumenda voluptatum magni ad minus soluta autem voluptatem commodi eligendi totam?
+              As a full-stack developer and digital marketer, I&apos;ve seamlessly
+              integrated technical expertise with marketing strategies to create
+              dynamic web solutions&nbsp; My diverse skill set ensures comprehensive
+              solutions for clients&apos; digital needs.
             </motion.p>
           </div>
           {/* slider */}
