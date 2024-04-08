@@ -61,11 +61,11 @@ const aboutData = [
     info: [
       {
         title: 'Software Developer - Yehgs UK Ltd',
-        stage: '2021 - 2023',
+        stage: '2021 - 2024',
       },
       {
         title: 'Digital Marketer - Italian Coffee Ventures',
-        stage: '2021 - 2023',
+        stage: '2021 - 2024',
       },
     ],
   },
@@ -162,14 +162,14 @@ const About = () => {
             {/* project */}
             <div className='relative flex-1 after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
               <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={4} duration={5}/> +
+                  <CountUp start={2} end={10} duration={10}/> +
               </div>
               <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>finished Projects</div>
             </div>
             {/* award */}
             <div className='relative flex-1'>
               <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={3} duration={5}/> +
+                  <CountUp start={0} end={4} duration={5}/> +
               </div>
               <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Winning Awards</div>
             </div>
