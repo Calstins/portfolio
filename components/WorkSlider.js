@@ -2,6 +2,10 @@ import Image from 'next/image';
 import { RiGithubLine } from 'react-icons/ri';
 import { TbWorldWww } from 'react-icons/tb';
 import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 // data
 const workSlides = {
@@ -38,11 +42,7 @@ const workSlides = {
     },
   ],
 };
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/pagination';
-
+i;
 const WorkSlider = () => {
   return (
     <Swiper
