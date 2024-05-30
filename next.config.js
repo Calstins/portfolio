@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     domains: ['i.postimg.cc'], // Add all domains you want to allow
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;

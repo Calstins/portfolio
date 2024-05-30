@@ -42,7 +42,7 @@ const workSlides = {
     },
   ],
 };
-i;
+
 const WorkSlider = () => {
   return (
     <Swiper
