@@ -3,9 +3,10 @@ import { RiGithubLine } from 'react-icons/ri';
 import { TbWorldWww } from 'react-icons/tb';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
+import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 // data
 const workSlides = {
@@ -13,16 +14,53 @@ const workSlides = {
     {
       images: [
         {
+          title: 'Augusta Digital ltd',
+          path: 'https://i.postimg.cc/0QbrFXw8/adsl.png',
+          technology: 'NextJs Framer-motion Tailwind',
+          url: 'https://www.adslng.com',
+          github: 'https://github.com/Calstins/adslng',
+        },
+        {
+          title: 'Starlink RomHouse Technology Landing Page',
+          path: 'https://i.postimg.cc/GhHwYw13/starlink.png',
+          technology: 'NextJs Framer-motion Tailwind',
+          url: 'https://starlink.romhousenetwork.com/',
+          github: 'https://github.com/Calstins/yehgs-website',
+        },
+        {
+          title: 'Novagarments ltd',
+          path: 'https://i.postimg.cc/brdysZTp/nova.png',
+          technology: 'NextJs Framer-motion Tailwind',
+          url: 'https://novagarments.com/',
+          github: 'https://github.com/yehgs/novagarments',
+        },
+        {
           title: 'Freestyle Working ltd',
           path: 'https://i.postimg.cc/tT3jWp7W/Untitled-design-26.png',
           technology: 'React GSAP Tailwind',
           url: 'https://freestyleworking.ltd',
           github: 'https://github.com/Calstins/freestyleworking',
         },
+      ],
+    },
+    {
+      images: [
+        {
+          title: 'Italian Coffee Venture UK',
+          path: 'https://i.postimg.cc/8zwrJ6dr/icv-uk.png',
+          technology: 'React Firebase',
+          url: 'https://italiancoffee.co.uk',
+        },
+        {
+          title: 'Barattini Coffee Ventures',
+          path: 'https://i.postimg.cc/cCsk58B1/barattin.png',
+          technology: 'E-commerce Wordpress Elementor',
+          url: 'https://barattini.coffee',
+        },
         {
           title: 'Italian Coffee Venture',
           path: 'https://i.postimg.cc/fykNVFSh/icv.png',
-          technology: 'Woocommerce',
+          technology: 'Woocommerce Wpress Elementor',
           url: 'https://italiancoffee.ng',
         },
         {
@@ -31,12 +69,6 @@ const workSlides = {
           technology: 'React Framer-motion Tailwind',
           url: 'https://yehgs.co.uk',
           github: 'https://github.com/Calstins/yehgs-website',
-        },
-        {
-          title: 'Barattini Coffee Ventures',
-          path: 'https://i.postimg.cc/cCsk58B1/barattin.png',
-          technology: 'E-commerce',
-          url: 'https://barattini.coffee',
         },
       ],
     },
@@ -50,7 +82,12 @@ const WorkSlider = () => {
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination]}
+      autoplay={{
+        display: 2500,
+        disableOnInteraction: false,
+        reverseDirection: false,
+      }}
+      modules={[Pagination, Autoplay]}
       className="h-[280px] sm:h-[480px]"
     >
       {workSlides.slides.map((work, index) => {
