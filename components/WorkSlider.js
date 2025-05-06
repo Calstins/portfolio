@@ -84,7 +84,7 @@ const WorkSlider = () => {
       }}
       autoplay={{
         display: 2500,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
         reverseDirection: false,
       }}
       modules={[Pagination, Autoplay]}
