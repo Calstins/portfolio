@@ -83,7 +83,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       autoplay={{
-        display: 2500,
+        display: 3000,
         disableOnInteraction: true,
         reverseDirection: false,
       }}
